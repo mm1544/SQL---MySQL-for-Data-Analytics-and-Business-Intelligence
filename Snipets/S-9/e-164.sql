@@ -9,7 +9,7 @@ for ‘dept_name’.
 SELECT 
     IFNULL(dep_no, 'N/A') AS dept_no,
     IFNULL(dept_name,
-            'Department name not provided') as dept_name,
+            'Department name not provided') AS dept_name,
     COALESCE(dep_no, dept_name) AS dept_info
 FROM
     departments_dup
